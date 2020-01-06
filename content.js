@@ -12,6 +12,7 @@ chrome.runtime.onMessage.addListener(
         let gmtTime=today.toUTCString();
         
         let etype=[];
+        // New id added on 1/6/2020
         $('#ctl00_contentplaceholder1_gRVAttend tbody tr td:nth-child(4)').each( function(){
            etype.push( $(this).text() );       
         });
