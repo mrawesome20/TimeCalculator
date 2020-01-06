@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Time Calculator",
+  "version": "1.0",
+"description": "Please use this on your own risk and do not blame anyone for any discrepancy.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.3.1.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+  
+}
